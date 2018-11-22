@@ -29,8 +29,8 @@ the latest master builds [here](https://grafana.com/grafana/download)
 
 ### Building the backend
 ```bash
-go get github.com/grafana/grafana
-cd $GOPATH/src/github.com/grafana/grafana
+go get github.com/aergoio/grafana
+cd $GOPATH/src/github.com/aergoio/grafana
 go run build.go setup
 go run build.go build
 ```
@@ -73,22 +73,22 @@ Open grafana in your browser (default: `http://localhost:3000`) and login with a
 
 There are two different ways to build a Grafana docker image. If you're machine is setup for Grafana development and you run linux/amd64 you can build just the image. Otherwise, there is the option to build Grafana completely within Docker.
 
-Run the image you have built using: `docker run --rm -p 3000:3000 grafana/grafana:dev`
+Run the image you have built using: `docker run --rm -p 3000:3000 aergo/grafana:dev`
 
 #### Building on linux/amd64 (fast)
 
 1. Build the frontend `go run build.go build-frontend`
 2. Build the docker image `make build-docker-dev`
 
-The resulting image will be tagged as `grafana/grafana:dev`
+The resulting image will be tagged as `aergo/grafana:dev`
 
 #### Building anywhere (slower)
 
 Choose this option to build on platforms other than linux/amd64 and/or not have to setup the Grafana development environment.
 
-1. `make build-docker-full` or `docker build -t grafana/grafana:dev .`
+1. `make build-docker-full` or `docker build -t aergo/grafana:dev .`
 
-The resulting image will be tagged as `grafana/grafana:dev`
+The resulting image will be tagged as `aergo/grafana:dev`
 
 ### Dev config
 
