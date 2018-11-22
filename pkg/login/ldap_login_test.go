@@ -3,8 +3,8 @@ package login
 import (
 	"testing"
 
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/setting"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

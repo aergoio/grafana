@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/gosimple/slug"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/setting"
 )
 
 type AppPluginCss struct {

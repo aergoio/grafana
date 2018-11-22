@@ -1,10 +1,10 @@
 package quota
 
 import (
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/session"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/aergoio/grafana/pkg/bus"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/services/session"
+	"github.com/aergoio/grafana/pkg/setting"
 )
 
 func QuotaReached(c *m.ReqContext, target string) (bool, error) {

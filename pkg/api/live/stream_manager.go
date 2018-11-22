@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/log"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/components/simplejson"
+	"github.com/aergoio/grafana/pkg/log"
+	m "github.com/aergoio/grafana/pkg/models"
 )
 
 type StreamManager struct {

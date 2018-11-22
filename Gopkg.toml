@@ -20,9 +20,9 @@
 #  version = "2.4.0"
 
 ignored = [
-  "github.com/grafana/grafana/data/*",
-  "github.com/grafana/grafana/public/*",
-  "github.com/grafana/grafana/node_modules/*"
+  "github.com/aergoio/grafana/data/*",
+  "github.com/aergoio/grafana/public/*",
+  "github.com/aergoio/grafana/node_modules/*"
  ]
 
 [[constraint]]

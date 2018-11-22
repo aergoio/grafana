@@ -3,10 +3,10 @@ package api
 import (
 	"strconv"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/metrics"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/search"
+	"github.com/aergoio/grafana/pkg/bus"
+	"github.com/aergoio/grafana/pkg/metrics"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/services/search"
 )
 
 func Search(c *m.ReqContext) {

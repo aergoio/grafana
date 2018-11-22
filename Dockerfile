@@ -1,7 +1,7 @@
 # Golang build container
 FROM golang:1.11
 
-WORKDIR $GOPATH/src/github.com/grafana/grafana
+WORKDIR $GOPATH/src/github.com/aergoio/grafana
 
 COPY Gopkg.toml Gopkg.lock ./
 COPY vendor vendor
@@ -69,7 +69,7 @@ RUN mkdir -p "$GF_PATHS_HOME/.aws" && \
     chown -R grafana:grafana "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS" && \
     chmod 777 "$GF_PATHS_DATA" "$GF_PATHS_HOME/.aws" "$GF_PATHS_LOGS" "$GF_PATHS_PLUGINS"
 
-COPY --from=0 /go/src/github.com/grafana/grafana/bin/linux-amd64/grafana-server /go/src/github.com/grafana/grafana/bin/linux-amd64/grafana-cli ./bin/
+COPY --from=0 /go/src/github.com/aergoio/grafana/bin/linux-amd64/grafana-server /go/src/github.com/aergoio/grafana/bin/linux-amd64/grafana-cli ./bin/
 COPY --from=1 /usr/src/app/public ./public
 COPY --from=1 /usr/src/app/tools ./tools
 COPY tools/phantomjs/render.js ./tools/phantomjs/render.js

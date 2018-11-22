@@ -6,13 +6,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/grafana/grafana/pkg/api/pluginproxy"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/middleware"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/aergoio/grafana/pkg/api/pluginproxy"
+	"github.com/aergoio/grafana/pkg/log"
+	"github.com/aergoio/grafana/pkg/middleware"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/plugins"
+	"github.com/aergoio/grafana/pkg/setting"
+	"github.com/aergoio/grafana/pkg/util"
 	macaron "gopkg.in/macaron.v1"
 )
 

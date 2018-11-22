@@ -3,11 +3,11 @@ package api
 import (
 	"fmt"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/dashboards"
-	"github.com/grafana/grafana/pkg/services/guardian"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/aergoio/grafana/pkg/api/dtos"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/services/dashboards"
+	"github.com/aergoio/grafana/pkg/services/guardian"
+	"github.com/aergoio/grafana/pkg/util"
 )
 
 func GetFolders(c *m.ReqContext) Response {

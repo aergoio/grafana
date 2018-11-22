@@ -13,10 +13,10 @@ import (
 
 	"golang.org/x/net/context/ctxhttp"
 
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
-	"github.com/grafana/grafana/pkg/tsdb"
+	"github.com/aergoio/grafana/pkg/log"
+	"github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/setting"
+	"github.com/aergoio/grafana/pkg/tsdb"
 	"github.com/opentracing/opentracing-go"
 )
 

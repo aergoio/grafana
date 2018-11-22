@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/log"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/bus"
+	"github.com/aergoio/grafana/pkg/components/simplejson"
+	"github.com/aergoio/grafana/pkg/log"
+	m "github.com/aergoio/grafana/pkg/models"
 )
 
 // DashAlertExtractor extracts alerts from the dashboard json

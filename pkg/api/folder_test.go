@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/services/dashboards"
+	"github.com/aergoio/grafana/pkg/api/dtos"
+	"github.com/aergoio/grafana/pkg/bus"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/services/dashboards"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

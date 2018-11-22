@@ -11,27 +11,27 @@ import (
 	"path"
 	"time"
 
-	"github.com/grafana/grafana/pkg/api/routing"
+	"github.com/aergoio/grafana/pkg/api/routing"
 	"github.com/prometheus/client_golang/prometheus"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
 	macaron "gopkg.in/macaron.v1"
 
-	"github.com/grafana/grafana/pkg/api/live"
-	httpstatic "github.com/grafana/grafana/pkg/api/static"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/middleware"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/plugins"
-	"github.com/grafana/grafana/pkg/registry"
-	"github.com/grafana/grafana/pkg/services/cache"
-	"github.com/grafana/grafana/pkg/services/datasources"
-	"github.com/grafana/grafana/pkg/services/hooks"
-	"github.com/grafana/grafana/pkg/services/rendering"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/aergoio/grafana/pkg/api/live"
+	httpstatic "github.com/aergoio/grafana/pkg/api/static"
+	"github.com/aergoio/grafana/pkg/bus"
+	"github.com/aergoio/grafana/pkg/components/simplejson"
+	"github.com/aergoio/grafana/pkg/log"
+	"github.com/aergoio/grafana/pkg/middleware"
+	"github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/plugins"
+	"github.com/aergoio/grafana/pkg/registry"
+	"github.com/aergoio/grafana/pkg/services/cache"
+	"github.com/aergoio/grafana/pkg/services/datasources"
+	"github.com/aergoio/grafana/pkg/services/hooks"
+	"github.com/aergoio/grafana/pkg/services/rendering"
+	"github.com/aergoio/grafana/pkg/setting"
 )
 
 func init() {

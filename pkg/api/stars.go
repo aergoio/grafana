@@ -1,8 +1,8 @@
 package api
 
 import (
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/bus"
+	m "github.com/aergoio/grafana/pkg/models"
 )
 
 func StarDashboard(c *m.ReqContext) Response {

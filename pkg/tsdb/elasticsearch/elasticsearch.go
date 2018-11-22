@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
-	"github.com/grafana/grafana/pkg/tsdb/elasticsearch/client"
+	"github.com/aergoio/grafana/pkg/log"
+	"github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/tsdb"
+	"github.com/aergoio/grafana/pkg/tsdb/elasticsearch/client"
 )
 
 // ElasticsearchExecutor represents a handler for handling elasticsearch datasource request

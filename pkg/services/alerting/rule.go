@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
+	"github.com/aergoio/grafana/pkg/components/simplejson"
 
-	m "github.com/grafana/grafana/pkg/models"
+	m "github.com/aergoio/grafana/pkg/models"
 )
 
 type Rule struct {

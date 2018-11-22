@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/models"
 )
 
 func TestStateIsUpdatedWhenNeeded(t *testing.T) {

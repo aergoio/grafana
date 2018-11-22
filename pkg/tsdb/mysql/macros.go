@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grafana/grafana/pkg/tsdb"
+	"github.com/aergoio/grafana/pkg/tsdb"
 )
 
 const rsIdentifier = `([_a-zA-Z0-9]+)`

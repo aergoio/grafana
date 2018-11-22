@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/metrics/graphitebridge"
-	"github.com/grafana/grafana/pkg/registry"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/aergoio/grafana/pkg/log"
+	"github.com/aergoio/grafana/pkg/metrics/graphitebridge"
+	"github.com/aergoio/grafana/pkg/registry"
+	"github.com/aergoio/grafana/pkg/setting"
 )
 
 var metricsLogger log.Logger = log.New("metrics")

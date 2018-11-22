@@ -3,11 +3,11 @@ package datasources
 import (
 	"errors"
 
-	"github.com/grafana/grafana/pkg/bus"
+	"github.com/aergoio/grafana/pkg/bus"
 
-	"github.com/grafana/grafana/pkg/log"
+	"github.com/aergoio/grafana/pkg/log"
 
-	"github.com/grafana/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/models"
 )
 
 var (

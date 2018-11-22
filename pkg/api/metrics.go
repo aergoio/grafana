@@ -3,13 +3,13 @@ package api
 import (
 	"context"
 
-	"github.com/grafana/grafana/pkg/api/dtos"
-	"github.com/grafana/grafana/pkg/bus"
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
-	"github.com/grafana/grafana/pkg/tsdb/testdata"
-	"github.com/grafana/grafana/pkg/util"
+	"github.com/aergoio/grafana/pkg/api/dtos"
+	"github.com/aergoio/grafana/pkg/bus"
+	"github.com/aergoio/grafana/pkg/components/simplejson"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/tsdb"
+	"github.com/aergoio/grafana/pkg/tsdb/testdata"
+	"github.com/aergoio/grafana/pkg/util"
 )
 
 // POST /api/tsdb/query

@@ -13,8 +13,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/grafana/grafana/pkg/cmd/grafana-cli/logger"
-	m "github.com/grafana/grafana/pkg/cmd/grafana-cli/models"
+	"github.com/aergoio/grafana/pkg/cmd/grafana-cli/logger"
+	m "github.com/aergoio/grafana/pkg/cmd/grafana-cli/models"
 )
 
 var (

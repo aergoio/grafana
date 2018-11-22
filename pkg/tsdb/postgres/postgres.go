@@ -6,9 +6,9 @@ import (
 	"strconv"
 
 	"github.com/go-xorm/core"
-	"github.com/grafana/grafana/pkg/log"
-	"github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/tsdb"
+	"github.com/aergoio/grafana/pkg/log"
+	"github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/tsdb"
 )
 
 func init() {

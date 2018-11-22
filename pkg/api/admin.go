@@ -4,9 +4,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/grafana/grafana/pkg/bus"
-	m "github.com/grafana/grafana/pkg/models"
-	"github.com/grafana/grafana/pkg/setting"
+	"github.com/aergoio/grafana/pkg/bus"
+	m "github.com/aergoio/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/setting"
 )
 
 func AdminGetSettings(c *m.ReqContext) {

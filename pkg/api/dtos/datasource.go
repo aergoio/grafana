@@ -3,8 +3,8 @@ package dtos
 import (
 	"strings"
 
-	"github.com/grafana/grafana/pkg/components/simplejson"
-	m "github.com/grafana/grafana/pkg/models"
+	"github.com/aergoio/grafana/pkg/components/simplejson"
+	m "github.com/aergoio/grafana/pkg/models"
 )
 
 type DataSource struct {
