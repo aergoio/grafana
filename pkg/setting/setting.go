@@ -15,9 +15,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-macaron/session"
 	"github.com/aergoio/grafana/pkg/log"
 	"github.com/aergoio/grafana/pkg/util"
+	"github.com/go-macaron/session"
 	"gopkg.in/ini.v1"
 )
 
@@ -34,8 +34,8 @@ const (
 	DEV                 = "development"
 	PROD                = "production"
 	TEST                = "test"
-	APP_NAME            = "Grafana"
-	APP_NAME_ENTERPRISE = "Grafana Enterprise"
+	APP_NAME            = "Aergo Grafana"
+	APP_NAME_ENTERPRISE = "Aergo Grafana Enterprise"
 )
 
 var (

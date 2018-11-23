@@ -1,19 +1,19 @@
 <div class="login container">
   <div class="login-content">
     <div class="login-branding">
-      <img class="logo-icon" src="public/img/grafana_icon.svg" alt="Grafana" />
+      <!--img class="logo-icon" src="public/img/aergo_icon.svg" alt="Aergo Grafana" /-->
       <div class="logo-wordmark" />
     </div>
     <div class="login-outer-box">
       <div class="login-inner-box" id="login-view">
         <form name="loginForm" class="login-form-group gf-form-group" ng-hide="disableLoginForm">
           <div class="login-form">
-            <input type="text" name="username" class="gf-form-input login-form-input" required ng-model='formModel.user' placeholder={{loginHint}}
-              autofocus>
+            <input type="text" name="username" class="gf-form-input login-form-input" required ng-model='formModel.user'
+              placeholder={{loginHint}} autofocus>
           </div>
           <div class="login-form">
-            <input type="password" name="password" class="gf-form-input login-form-input" required ng-model="formModel.password" id="inputPassword"
-              placeholder="password">
+            <input type="password" name="password" class="gf-form-input login-form-input" required ng-model="formModel.password"
+              id="inputPassword" placeholder="password">
           </div>
           <div class="login-button-group">
             <button type="submit" class="btn btn-large p-x-2" ng-if="!loggingIn" ng-click="submit();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
@@ -81,16 +81,18 @@
       <div class="login-inner-box remove hidden" id="change-password-view">
         <div class="text-left login-change-password-info">
           <h5>Change Password</h5>
-          Before you can get started with awesome dashboards we need you to make your account more secure by changing your password.
+          Before you can get started with awesome dashboards we need you to make your account more secure by changing
+          your password.
           <br />You can change your password again later.
         </div>
         <form class="login-form-group gf-form-group">
           <div class="login-form">
-            <input type="password" id="newPassword" name="newPassword" class="gf-form-input login-form-input" required ng-model='command.newPassword'
-              placeholder="New password">
+            <input type="password" id="newPassword" name="newPassword" class="gf-form-input login-form-input" required
+              ng-model='command.newPassword' placeholder="New password">
           </div>
           <div class="login-form">
-            <input type="password" name="confirmNew" class="gf-form-input login-form-input" required ng-model="command.confirmNew" placeholder="Confirm new password">
+            <input type="password" name="confirmNew" class="gf-form-input login-form-input" required ng-model="command.confirmNew"
+              placeholder="Confirm new password">
           </div>
           <div class="login-button-group login-button-group--right text-right">
             <a class="btn btn-link" ng-click="skip();">
