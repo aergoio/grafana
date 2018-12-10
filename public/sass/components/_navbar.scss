@@ -60,7 +60,9 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  display: block;
+  // display: block;
+  // AERGO IFRAME EDITS
+  display: none;
   margin: 0;
   color: darken($link-color, 5%);
   font-size: $font-size-lg;

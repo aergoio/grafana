@@ -1,6 +1,8 @@
 .sidemenu {
   position: fixed;
-  display: flex;
+  // display: flex;
+  // AERGO IFRAME EDITS
+  display: none;
   flex-flow: column;
   flex-direction: column;
   width: $side-menu-width;
