@@ -1,0 +1,88 @@
+<div class="section gf-form-group" ng-init="
+domains = ['auto', 'month', 'day', 'hour'];
+subDomains = {
+  'auto':  ['auto'],
+  'month': ['auto', 'week', 'x_week', 'day', 'x_day'],
+  'day':   ['auto', 'hour', 'x_hour'],
+  'hour':  ['auto', 'min', 'x_min']
+}">
+  <div class="gf-form">
+    <label class="gf-form-label width-10">Domain
+      <i class="grafana-tip fa fa-question-circle ng-scope" bs-tooltip="'Primary unit to group data.<br>Choose auto to select based on the time range.'"></i>
+    </label>
+    <div class="gf-form-select-wrapper max-width-8">
+      <select class="input-small gf-form-input" ng-model="ctrl.panel.config.domain" ng-options="t for t in domains" ng-change="ctrl.render()"></select>
+    </div>
+
+    <label class="gf-form-label width-10">Sub domain
+      <i class="grafana-tip fa fa-question-circle ng-scope" bs-tooltip="'Secondary unit to group data.<br>Choose auto to select based on the domain.'"></i>
+    </label>
+    <div class="gf-form-select-wrapper max-width-8">
+      <select class="input-small gf-form-input" ng-model="ctrl.panel.config.subDomain" ng-options="t for t in subDomains[ctrl.panel.config.domain]" ng-change="ctrl.render()"></select>
+    </div>
+
+    <gf-form-switch class="gf-form" label="Vertical orientation" label-class="width-12" checked="ctrl.panel.config.verticalOrientation" on-change="ctrl.render()"></gf-form-switch>
+  </div>
+
+  <div class="gf-form">
+    <label class="gf-form-label width-10">Col limit
+      <i class="grafana-tip fa fa-question-circle ng-scope" bs-tooltip="'The numbers of columns to split domain dates into.'"></i>
+    </label>
+    <input class="gf-form-input max-width-8" ng-model="ctrl.panel.config.colLimit" ng-change="ctrl.render()" ng-model-onblur>
+
+    <label class="gf-form-label width-10">Row limit
+      <i class="grafana-tip fa fa-question-circle ng-scope" bs-tooltip="'The numbers of rows to split domain dates into.<br>Ignored if Col limit is specified.'"></i>
+    </label>
+    <input class="gf-form-input max-width-8" ng-model="ctrl.panel.config.rowLimit" ng-change="ctrl.render()" ng-model-onblur>
+  </div>
+
+  <div class="gf-form">
+    <label class="gf-form-label width-10">Cell size</label>
+    <input class="gf-form-input max-width-8" ng-model="ctrl.panel.config.cellSize" ng-change="ctrl.render()" ng-model-onblur>
+
+    <label class="gf-form-label width-10">Cell padding</label>
+    <input class="gf-form-input max-width-8" ng-model="ctrl.panel.config.cellPadding" ng-change="ctrl.render()" ng-model-onblur>
+
+    <label class="gf-form-label width-10">Cell radius</label>
+    <input class="gf-form-input max-width-8" ng-model="ctrl.panel.config.cellRadius" ng-change="ctrl.render()" ng-model-onblur>
+  </div>
+
+  <div class="gf-form">
+    <label class="gf-form-label width-10">Thresholds
+      <i class="grafana-tip fa fa-question-circle ng-scope" bs-tooltip="'Thresholds to split data into colors.<br>10,20,30 will produce 4 colors for <10(color=min), 10:20, 20:30, and >=30(color=max).<br/>If it is empty or auto, the thresholds are automatically determined based on statistics.'"></i>
+    </label>
+    <input class="gf-form-input max-width-26" ng-model="ctrl.panel.config.legendStr" ng-change="ctrl.render()" ng-model-onblur>
+
+    <label class="gf-form-label width-10">Colors (min:max)</label>
+    <spectrum-picker class="gf-form-input width-4" ng-model="ctrl.panel.config.legendColors.min" ng-change="ctrl.render()" ></spectrum-picker>
+    <spectrum-picker class="gf-form-input width-4" ng-model="ctrl.panel.config.legendColors.max" ng-change="ctrl.render()" ></spectrum-picker>
+  </div>
+
+  <div class="gf-form">
+    <label class="gf-form-label width-10">Empty color</label>
+    <spectrum-picker class="gf-form-input width-8" ng-model="ctrl.panel.config.legendColors.empty" ng-change="ctrl.render()" ></spectrum-picker>
+
+    <gf-form-switch class="gf-form" label="Show legend" label-class="width-10" checked="ctrl.panel.config.displayLegend" on-change="ctrl.render()"></gf-form-switch>
+  </div>
+
+  <div class="gf-form">
+    <label class="gf-form-label width-10">Link template
+      <i class="grafana-tip fa fa-question-circle ng-scope" bs-tooltip="'By clicking a cell, jump to this URL.<br>$ts_from and $ts_to in the template are replaced by timestamps interval of the clicked cell.<br>e.g.: /dashboard/db/example?from=$ts_from&to=$ts_to'"></i>
+    </label>
+    <input class="gf-form-input max-width-26" ng-model="ctrl.panel.config.linkTemplate" ng-change="ctrl.render()" ng-model-onblur>
+  </div>
+
+</div>
+
+<div class="section gf-form-group">
+  <h5>Hover info</h5>
+
+  <div class="gf-form">
+    <label class="gf-form-label width-5">Unit</label>
+    <div class="gf-form-dropdown-typeahead max-width-15" ng-model="ctrl.panel.config.hoverUnitFormat" dropdown-typeahead2="ctrl.unitFormats" dropdown-typeahead-on-select="ctrl.setUnitFormat($subItem)"></div>
+  </div>
+  <div class="gf-form">
+    <label class="gf-form-label width-5">Decimals</label>
+    <input type="number" class="gf-form-input max-width-5" ng-model="ctrl.panel.config.hoverDecimals" ng-change="ctrl.render()" ng-model-onblur>
+  </div>
+</div>
